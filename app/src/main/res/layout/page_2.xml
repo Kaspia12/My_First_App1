@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8e8e8">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#ffffff"
+        android:text="Log into Your Account"
+        android:textSize="30dp"
+        android:gravity="bottom"
+        android:padding="8dp"
+        android:layout_marginBottom="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        />
+
+    <LinearLayout
+        android:layout_width="354dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_back"
+        android:backgroundTint="#ffffff"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:background="@drawable/button_back"
+        android:backgroundTint="@color/black"
+        android:layout_margin="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Or sign up with social account"
+
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#00acee"
+            android:padding="15dp"
+            app:srcCompat="@mipmap/facebook"
+            android:background="@drawable/button_back"
+            android:layout_marginRight="2dp"
+
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#00acee"
+            android:padding="15dp"
+            app:srcCompat="@mipmap/twitter"
+            android:background="@drawable/button_back"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
